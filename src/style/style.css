@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-custom {
+    background-color: #E10000;
+}
+
+.text-custom {
+    color: #E10000;
+}
+
+.column-flex {
+    display: flex;
+    overflow-x: auto;
+}
+
+@keyframes opacityAnimation {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+* {
+    animation: opacityAnimation 500ms;
+}
+
+/* Header */
+
+header {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search {
+    width: 60%;
+}
+
+#keyword {
+    width: 80%;
+}
+
+#search-button {
+    width: 18%;
+}
+
+
+.search-mobile {
+    width: 91%;
+    position: fixed;
+    top: -60px;
+    transition: 500ms;
+}
+
+.active {
+    top: 10px;
+}
+
+/* End Header */
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(../img/jumbotron.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 450px;
+    margin-top: -57px;
+    overflow: hidden;
+}
+
+.display-4 {
+    margin-top: 90px;
+    font-weight: 700;
+}
+
+
+#search-jumbotron {
+    margin-top: 20px;
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    border-radius: 25px;
+    padding-left: 25px;
+    padding-right: 20px;
+    font-size: 1.5em;
+}
+
+/* End Header */
+
+/* Main Content */
+
+#content {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* Movie Cards */
+
+.card span .btn {
+    width: 50%;
+    padding: 0px;
+}
+
+
+
+.card .poster-movie {
+    cursor: pointer;
+}
+
+.card-body {
+    padding: 0;
+    padding-top: 3%;
+}
+
+.card-year {
+    font-size: 0.85em;
+}
+
+.movie-container .card-body p {
+    font-size: 0.85em;
+}
+
+.card .movie-title {
+    cursor: pointer;
+}
+
+.card .movie-title:hover {
+    color: #E10000;
+}
+
+.card img:hover {
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+    filter: brightness(30%);
+}
+
+.card {
+    border: 0;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin-left: 0.75%;
+    margin-right: 0.75%;
+}
+
+.card-body {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.card img {
+    transition: 250ms;
+}
+
+/* End Card */
+
+.trailer {
+    padding: 0;
+}
+
+.line {
+    width: 17%;
+    height: 3px;
+    background-color: #E10000;
+}
+
+.request-error {
+    width: 30%;
+    margin-left: 35%;
+}
+
+/* End Main Content */
+
+/* Footer */
+
+footer {
+    height: 55px;
+}
+
+@media screen and (max-width: 991px) {
+    .search {
+        width: 80%;
+    }
+
+    .jumbotron h2 {
+        font-size: 1.9em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #keyword {
+        width: 70%;
+    }
+
+    #search-button {
+        width: 25%;
+    }
+
+    .card {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .jumbotron {
+        height: 320px;
+    }
+
+    .jumbotron h1 {
+        font-size: 2em;
+    }
+
+    .jumbotron h2 {
+        font-size: 1.2em;
+    }
+
+    .jumbotron .container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .jumbotron .display-4 {
+        margin-top: 60px;
+    }
+
+    #search-jumbotron {
+        height: 35px;
+        font-size: 1em;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 20px;
+    }
+
+    .request-error {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .trailer .request-error {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .card {
+        margin-left: 0.8%;
+        margin-right: 0.8%;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    .line {
+        width: 50%;
+    }
+
+    .details img {
+        width: 80%;
+    }
+
+    .details {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    copy-right p {
+        font-size: 0.8em;
+    }
+}
